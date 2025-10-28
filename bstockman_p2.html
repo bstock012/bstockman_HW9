@@ -4,77 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Analytics Student Survey</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="https://kit.fontawesome.com/12aaa3a3a3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Business Analytics Student Survey</h1>
-    <form action="bstockman_p3.html" method="get">
-        <fieldset>
-            <legend>I am finishing my:</legend>
-            <label>
-                <input type="radio" name="year" value="first" required>
-                First year at Iowa
-            </label><br>
-            <label>
-                <input type="radio" name="year" value="second">
-                Second year at Iowa
-            </label><br>
-            <label>
-                <input type="radio" name="year" value="third">
-                Third year at Iowa
-            </label><br>
-            <label>
-                <input type="radio" name="year" value="fourth">
-                Fourth year at Iowa
-            </label><br>
-            <label>
-                <input type="radio" name="year" value="fifth_or_more">
-                Fifth or more year at Iowa
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>BAIS core class I have completed:</legend>
-            <label>
-                <input type="checkbox" name="core_classes" value="information_systems" required>
-                Information Systems
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="operations">
-                Operations
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="foundations_of_business_analytics">
-                Foundations of Business Analytics
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="computational_thinking">
-                Computational Thinking
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="database_management">
-                Database Management
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="data_wrangling">
-                Data Wrangling
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="data_mining">
-                Data Mining
-            </label><br>
-            <label>
-                <input type="checkbox" name="core_classes" value="bais_capstone">
-                BAIS Capstone
-            </label>
-        </fieldset>
-        <button onclick="window.location.href='bstockman_p1.html';">
-            Previous page
-        </button>
-        <button onclick="window.location.href='bstockman_ty.html';">
-            Next page
-        </button>
+<div class="container mt-5 d-flex justify-content-center">
+    <form class="form-container" action="bstockman_ty.html" method="get">
+        <h1 class="mb-4 text-center">Business Analytics Student Survey</h1>
+        <div class="mb-4">
+            <label class="form-label fw-bold">I am finishing my:</label>
+            <div>
+                <div class="form-input-label">
+                    <input type="radio" name="year" value="first" required>
+                    <span>First year at Iowa</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="radio" name="year" value="second">
+                    <span>Second year at Iowa</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="radio" name="year" value="third">
+                    <span>Third year at Iowa</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="radio" name="year" value="fourth">
+                    <span>Fourth year at Iowa</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="radio" name="year" value="fifth_or_more">
+                    <span>Fifth or more year at Iowa</span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label class="form-label fw-bold">BAIS core class I have completed:</label>
+            <div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="information_systems" required>
+                    <span>Information Systems</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="operations">
+                    <span>Operations</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="foundations_of_business_analytics">
+                    <span>Foundations of Business Analytics</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="computational_thinking">
+                    <span>Computational Thinking</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="database_management">
+                    <span>Database Management</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="data_wrangling">
+                    <span>Data Wrangling</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="data_mining">
+                    <span>Data Mining</span>
+                </div>
+                <div class="form-input-label">
+                    <input type="checkbox" name="core_classes" value="bais_capstone">
+                    <span>BAIS Capstone</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-4">
+            <a href="bstockman_p1.html" class="btn btn-secondary">Previous page</a>
+            <button type="submit" class="btn btn-primary">Next page</button>
+        </div>
     </form>
-
+</div>
 </body>
 </html>
