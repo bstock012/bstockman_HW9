@@ -10,17 +10,29 @@
 <body>
     <h1>Business Analytics Student Survey</h1>
     <form action="bstockman_p3.html" method="get">
-        <p>
-            <label for="year">I am finishing my:</label><br>
-            <select id="year" name="year" required>
-                <option value="">-- Select an option --</option>
-                <option value="first">first year at Iowa</option>
-                <option value="second">second year at Iowa</option>
-                <option value="third">third year at Iowa</option>
-                <option value="fourth">fourth year at Iowa</option>
-                <option value="fifth_or_more">fifth or more year at Iowa</option>
-            </select>
-        </p>
+        <fieldset>
+            <legend>I am finishing my:</legend>
+            <label>
+                <input type="radio" name="year" value="first" required>
+                First year at Iowa
+            </label><br>
+            <label>
+                <input type="radio" name="year" value="second">
+                Second year at Iowa
+            </label><br>
+            <label>
+                <input type="radio" name="year" value="third">
+                Third year at Iowa
+            </label><br>
+            <label>
+                <input type="radio" name="year" value="fourth">
+                Fourth year at Iowa
+            </label><br>
+            <label>
+                <input type="radio" name="year" value="fifth_or_more">
+                Fifth or more year at Iowa
+            </label>
+        </fieldset>
         <fieldset>
             <legend>BAIS core class I have completed:</legend>
             <label>
