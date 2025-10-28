@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analytics Student Survey</title>
+</head>
+<body>
+    <h1>Business Analytics Student Survey</h1>
+    <form action="bstockman_p3.html" method="get">
+        <p>
+            <label for="year">I am finishing my:</label><br>
+            <select id="year" name="year" required>
+                <option value="">-- Select an option --</option>
+                <option value="first">first year at Iowa</option>
+                <option value="second">second year at Iowa</option>
+                <option value="third">third year at Iowa</option>
+                <option value="fourth">fourth year at Iowa</option>
+                <option value="fifth_or_more">fifth or more year at Iowa</option>
+            </select>
+        </p>
+        <fieldset>
+            <legend>BAIS core class I have completed:</legend>
+            <label>
+                <input type="checkbox" name="core_classes" value="information_systems" required>
+                Information Systems
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="operations">
+                Operations
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="foundations_of_business_analytics">
+                Foundations of Business Analytics
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="computational_thinking">
+                Computational Thinking
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="database_management">
+                Database Management
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="data_wrangling">
+                Data Wrangling
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="data_mining">
+                Data Mining
+            </label><br>
+            <label>
+                <input type="checkbox" name="core_classes" value="bais_capstone">
+                BAIS Capstone
+            </label>
+        </fieldset>
+        <button onclick="window.location.href='bstockman_p1.html';">
+            Previous page
+        </button>
+        <button onclick="window.location.href='bstockman_ty.html';">
+            Next page
+        </button>
+    </form>
+
+</body>
+</html>
